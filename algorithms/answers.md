@@ -1,7 +1,7 @@
 1.
   a. This would be a O(1) complexity, constant time, due to it coming down to a     = 2n no matter how big n becomes it is only one calculation.
 
-  b. This would be O(n) complexity, linear time. It is looping and constantly       changing i to halve itself, increasing the time it takes to do so linearly     as n approaches infinity.
+  b. This would be O(log n) complexity, logarithmic time. It is looping and         constantly changing i to halve itself, increasing the time it takes to do      so linearly as n approaches infinity.
 
   c. Due to double nested for-loops, this would be O(n^3), cubic time. The          larger n becomes, sum quickly becomes very large, taking a long time to        calculate.
 
@@ -9,9 +9,9 @@
 
   e. This one also would be another exponential runtime as n gets larger, O(n^4)    specifically.
 
-  f. This would be a linear time complexity recursive function. Run time            increases directly dependent on how big n is until it returns 0. 
+  f. This would be a linear time complexity recursive function. Run time            increases directly dependent on how big n is until it returns 0. O(n)
 
-  g. This is a recursive function searching each element in an array, therefore     it is of linear time complexity as well, because the first if statement is     only checking for a non-negative arraySize, each loop only checking one        item in constant time.
+  g. This is a recursive function searching each element in an array, therefore     it is of linear time complexity as well, because the first if statement is     only checking for a non-negative arraySize, each loop only checking one        item in constant time. O(n)
 
 2.
   a. let a = [];

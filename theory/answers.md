@@ -6,7 +6,7 @@ both `antelope` and `antelopes`.)
     antelope rocks out
     antelopes rock out
 
-   REGEX = /\b(antelopes)*\b/g
+   ####REGEX = /antelopes* rocks* out/gi
 
 * Regex that matches either of:
 
@@ -17,7 +17,7 @@ both `antelope` and `antelopes`.)
 
     boat
 
-  REGEX = /\b(goat|moat)\b/g
+  ####REGEX = /(goat|moat)/gi
 
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
@@ -28,7 +28,7 @@ both `antelope` and `antelopes`.)
   1999-01-20
   812-2-10
 
-  REGEX = /[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}/g
+  ####REGEX = /[0-9]{4}-[0-9]{1,2}-[0-9]{1,2}/g
 
 ## State Machines
 
@@ -64,9 +64,9 @@ both `antelope` and `antelopes`.)
     bold sequence need only accept `1` (and is a trivial regex). (ESC is
     a single character which can be represented with `\e` in the regex.)
 
-    REGEX = /\e\[[0-9]*;[0-9]*f|H/g
+    ####REGEX = /\e\[[0-9]*;[0-9]*f|H/g
 
-    REGEX = /\e\[1{0,1}m/g
+    ####REGEX = /\e\[1{0,1}m/g
 
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
